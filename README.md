@@ -1,13 +1,12 @@
-<h1 align="center">Project Title</h1>
+<h1 align="center">DocSummarize</h1>
 
-<p align="center"> Few lines describing your project.</p>
+<p align="center">AI-powered TUI application for fast and concise document summarization</p>
 
 <div align="center">
 
-[![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)](http://hackathon.url.com)
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/XST-BD/DocSummary.svg)](https://github.com/XST-BD/DocSummary/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/XST-BD/DocSummary.svg)](https://github.com/XST-BD/DocSummary/pulls)
 
 </div>
 
@@ -20,8 +19,9 @@
 - [Dependencies / Limitations](#dependencies--limitations)
 - [Future Scope](#future-scope)
 - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installing](#installing)
+    - [Prerequisites](#setup-before-1st-run)
+    - [Setup before every run](#setup-before-every-run)
+    - [Running the Application](#run-the-application)
 - [Usage](#usage)
 - [Built With](#built-with)
 - [Authors](#authors)
@@ -66,50 +66,82 @@ in the future.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Follow these instructions to set up and run the application on your local machine.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+- Python 3.8 or higher
+- pip (Python package installer)
 
-```
-Give examples
-```
+### Setup before 1st run
 
-### Installing
+1. Clone the repository
+    ```bash
+    git clone 
+    ````
+2. Navigate to the project directory
+    ```bash
+    cd path/to/folder/DocSummarize
+    ```
+3. Set up a virtual environment (optional but recommended)
+    ```bash
+    python -m venv venv
+    ```
+4. Activate the virtual environment
+- On Windows
+    ```bash
+    venv\Scripts\activate
+    ```
+- On macOS / Linux
+    ```bash
+    source venv/bin/activate
+    ```
+5. Install the required dependencies
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### Windows
+### Setup before every run
+1. Navigate to the project directory
+    ```bash
+    cd path/to/folder/DocSummarize
+    ```
+2. Activate the virtual environment
+- On Windows
+    ```bash
+    venv\Scripts\activate
+    ```
+- On macOS / Linux
+    ```bash
+    source venv/bin/activate
+    ```
 
+### Run the Application
+
+#### Windows
 ```bash
-python run.py
+python main.py
 ```
 
-### macOS / Linux
-
+#### macOS / Linux
 ```bash
-python3 run.py
+python3 main.py
 ```
 
 ## Usage
 
-Add notes about how to use the system.
+- Enter the path of the document you want to summarize.
+- (Optional) Provide custom prompt.
+- Press the "Generate" button to generate the summary.
+- View the generated summary in the designated area.
 
 ## Built With
 
 - [**Python**](https://www.python.org/) - Core Language
 - [**Textual**](https://textual.textualize.io/) - TUI Framework
-- [**Typer**](https://typer.tiangolo.com/) - CLI Library
-- [**SQLite**](https://www.sqlite.org/) - Database
 - **Other Tools:**
 
 ## Authors
 
 - [**Atia Farha**](https://github.com/Atia-Farha) - Frontend Developer
 - [**S.M Nazmus Sadat**](https://github.com/smsadat-dev) - Backend Developer
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
